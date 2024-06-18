@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/bluetooth_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Status: "
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_toggle_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toggle Bluetooth"/>
+
+    <Button
+        android:id="@+id/btn_search_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search for Devices"/>
+
+    <Button
+        android:id="@+id/btn_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Paired Devices"
+        android:layout_marginBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/no_devices_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Bluetooth devices nearby."
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/bluetooth_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/nfc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NFC Tag Content"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+</LinearLayout>
